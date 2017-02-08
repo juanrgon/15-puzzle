@@ -12,7 +12,7 @@
     <div ng-app="game" ng-controller="gameController">
         <div id='board' class='board'>
             <div class='row' ng-repeat='j in [0,1,2,3]' ng-init='row=$index'>
-                <div class="hole" ng-repeat='k in [0,1,2,3]' ng-init='column=$index'>
+                <div class="slot" ng-repeat='k in [0,1,2,3]' ng-init='column=$index'>
                     <div ng-if="tiles[j*4+k] != 0" ng-click="slide(row, column)" class='tile'>
                        {{tiles[(j*4+k)]}}
                     </div>

@@ -21,7 +21,7 @@ h1 {
     height: 25%;
 }
 
-.hole {
+.slot {
     position: relative;
     display: table-cell;
     border: 1px solid white;
