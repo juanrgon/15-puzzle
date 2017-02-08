@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel='stylesheet' href='styles.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type='text/javascript' src='lib/game.js'></script>
+</head>
+
+<body>
+    <h1>15 Puzzle</h1>
+
+    <div ng-app="game" ng-controller="gameController">
+        <div id='board' class='board'>
+            <div class='row' ng-repeat='j in [0,1,2,3]' ng-init='row=$index'>
+                <div class="hole" ng-repeat='k in [0,1,2,3]' ng-init='column=$index'>
+                    <div ng-if="tiles[j*4+k] != 0" ng-click="slide(row, column)" class='tile'>
+                       {{tiles[(j*4+k)]}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='reset-wrapper'>
+            <button id='reset-button' ng-click="reset()">shuffle</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
