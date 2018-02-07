@@ -1,4 +1,5 @@
 body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: #faf8ef;
 }
 
@@ -10,7 +11,6 @@ h1 {
 
 .board {
     display: table;
-    border: 1px solid black;
     width: 500px;
     height: 500px;
     margin: auto;
@@ -31,6 +31,7 @@ h1 {
 }
 
 .tile {
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
